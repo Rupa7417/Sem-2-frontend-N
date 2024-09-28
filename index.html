@@ -204,4 +204,16 @@
         newMessage.textContent = message; // Display the received message
         messagesDiv.appendChild(newMessage); // Append the message to the messages div
     });
+    // Creating a new WebSocket instance and connecting to 'ws://localhost:3000' 
+const ws = new WebSocket('ws://localhost:3000'); 
+  
+// Event listener for handling incoming messages 
+ws.onmessage = (event) => { 
+  // Parsing the JSON message received from the server 
+  const message = JSON.parse(event.data); 
+  // Updating the UI based on the received message data 
+}; 
+  
+// Sending a message from the client to the server 
+ws.send('Hello from the client!');
 </script>
