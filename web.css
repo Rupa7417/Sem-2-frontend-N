@@ -413,3 +413,25 @@ footer a:hover{
         margin-left: 2%;
     }   
 }
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--txt-second-color);
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 8px 12px 8px;
+}
+
+.copyright {
+  padding: 12px 0;
+  color: var(--txt-second-color);
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
